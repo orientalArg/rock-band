@@ -1,0 +1,117 @@
+.backto__top {
+    z-index: 99;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    bottom: 25px;
+    border: hidden;
+    cursor: pointer;
+    position: fixed;
+    font-size: 75px;
+    color: #d84848;
+    text-align: center;
+    overflow-y: hidden;
+    border-radius: 50%;
+    background: #ffffffcc;
+    &:hover {
+        background: rgb(255, 255, 255);
+    }
+    @include for-tablet-landscape-up {
+        right: 50px;
+        bottom: 50px;
+    }
+}
+
+footer {
+    width: 100%;
+    min-height: 250px;
+    background: $background;
+    padding: 10px 25px 0 25px;
+    .footer__block {
+        gap: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 0;
+        min-height: 120px;
+        justify-content: center;
+        border-top: solid 2px $border-color;
+        @include for-tablet-portrait-up {
+            gap: 0;
+        }
+        .footer__column {
+            width: 100%;
+            display: grid;
+            margin: 0 20px;
+            text-align: center;
+            align-items: center;
+            @include for-tablet-portrait-up {
+                width: 200px;
+                text-align: left;
+            }
+            a {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    border-radius: 5px;
+                    border-top: 3px solid white;
+                    right: 100%;
+                    bottom: 1px;
+                    left: 0;
+                    z-index: 2;
+                }
+                &:hover::after {
+                    transition: 0.7s;
+                    right: 0;
+                }
+            }
+            h1,
+            h2,
+            h3 {
+                margin: 2px;
+                color: lightgray;
+                font-size: 1.4em;
+                letter-spacing: .6px;
+                @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+                font-family: 'Bebas Neue', cursive;
+            }
+        }
+        .footer__icon {
+            gap: 3px;
+            min-height: 40px;
+            img {
+                width: 33px;
+                height: 33px;
+                padding: 5px;
+                border-radius: 25%;
+                border: solid 2px #d84848;
+                &:hover {
+                    padding: 3px;
+                    animation: img 0.7s forwards;
+                }
+                @keyframes img {
+                    0% {
+                        background-color: $border-color;
+                    }
+                    100% {
+                        background-color: rgba(125, 125, 125, 0);
+                    }
+                }
+            }
+        }
+        .author {
+            width: 100%;
+            text-align: center;
+            p {
+                color: $border-color;
+                a {
+                    color: $border-color;
+                    &:hover {
+                        color: white;
+                        text-decoration: underline white;
+                    }
+                }
+            }
+        }
+    }
+}
