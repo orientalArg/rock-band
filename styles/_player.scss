@@ -1,0 +1,76 @@
+.music__player {
+    width: 100%;
+    padding: 3.5rem 2rem;
+    background: $background;
+    .player-title {
+        font-size: 1.5em;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    .container {
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 2.5rem auto;
+        max-width: 550px;
+        @include for-tablet-landscape-up {
+            max-width: 100%;
+        }
+        .left-box {
+            width: 100%;
+            margin: auto;
+            max-width: 400px;
+            min-height: 100px;
+            @include for-tablet-landscape-up {
+                width: 30%;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        .right-box {
+            width: 100%;
+            margin: auto 0;
+            padding: 2rem 0;
+            font-size: 20px;
+            height: fit-content;
+            @include for-tablet-landscape-up {
+                width: 70%;
+                padding: 0 1rem;
+            }
+            ul {
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                li {
+                    width: 100%;
+                    display: flex;
+                    transition: .5s;
+                    list-style: none;
+                    border-radius: 3px;
+                    padding: 0 .3rem;
+                    align-items: flex-end;
+                    border-bottom: solid 2px $border-color;
+                    justify-content: space-between;
+                    .button-box {
+                        width: fit-content;
+                        margin-bottom: 5px;
+                        button {
+                            width: 37px;
+                            padding: 3px 0;
+                            font-size: 14px;
+                            cursor: pointer;
+                            color: #191919;
+                            border-radius: 10px 0;
+                            border: solid white 2px;
+                            &:hover {
+                                color: white;
+                                transition: 0.7s;
+                                background-color: #282828;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

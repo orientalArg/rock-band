@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +7,8 @@
     <title>Elysian | Página Oficial</title>
     <link rel="icon" type="image/jpg" sizes="32x32" href="./images/elysian-album.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
 </head>
-
 <body>
     <header id="header">
         <a class="logo" href="./index.html" title="Página Principal">
@@ -54,7 +52,7 @@
             <a href="http://instagram.com/elysian.necochea/?hl=es-la"><img src="images/INSTAGRAM_icon-icons.com_65535.svg" alt="instagram-icon " class="icon"></a>
         </div>
     </div>
-    <div class="hero">
+    <div class="flex hero">
         <div class="hero__text">
             <h1>Nuestra Historia</h1>
             <p>
@@ -64,95 +62,98 @@
             </p>
             <a href="mailto:elysian.epicrock@gmail.com"><button title="Envianos un Correo Electrónico">Escríbenos</button></a>
         </div>
+        <div class="hero__media"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Felysiannecochea&tabs=timeline%2C%20events&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
     </div>
     <Section class="music__player" id="music__player">
-        <h1 class="player-title">Escucha nuestro nuevo album</h1>
-        <div class="left-box">
-            <img src="./images/elysian-album.jpg" alt="portada-album" loading="lazy" />
-        </div>
-        <div class="right-box">
-            <ul>
-                <li>
-                    <p class="song">Revelaciones</p>
-                    <div class="button-box">
-                        <audio src="./audio/1.Revelaciones.mp3" type="audio/mp3" class="audio">Tu buscador no soporta este formato de audio</audio>
-                        <button class="play__btn">&#9658</button>
-                        <button class="pause__btn">&#9616 &#9612</button>
-                    </div>
-                </li>
-                <li>
-                    <p class="song">Guerrero de la luz</p>
-                    <div class="button-box">
-                        <audio src="./audio/2.Guerrero de la luz.mp3" type="audio/mp3" class="audio">Tu buscador no soporta este formato de audio</audio>
-                        <button class="play__btn">&#9658</button>
-                        <button class="pause__btn">&#9616 &#9612</button>
-                    </div>
-                </li>
-                <li>
-                    <p class="song">Redención</p>
-                    <div class="button-box">
-                        <audio src="./audio/3.Redención.mp3" type="audio/mp3" class="audio">Tu buscador no soporta este formato de audio</audio>
-                        <button class="play__btn">&#9658</button>
-                        <button class="pause__btn">&#9616 &#9612</button>
-                    </div>
-                </li>
-                <li>
-                    <p class="song">Enemigo Imaginario</p>
-                    <div class="button-box">
-                        <audio src="./audio/4.Enemigo imaginario.mp3" type="audio/mp3" class="audio">Tu buscador no soporta este formato de audio</audio>
-                        <button class="play__btn">&#9658</button>
-                        <button class="pause__btn">&#9616 &#9612</button>
-                    </div>
-                </li>
-                <li>
-                    <p class="song">A traves del espejo</p>
-                    <div class="button-box">
-                        <audio src="./audio/5.A través del espejo.mp3" type="audio/mp3" class="audio">Tu buscador no soporta este formato de audio</audio>
-                        <button class="play__btn">&#9658</button>
-                        <button class="pause__btn">&#9616 &#9612</button>
-                    </div>
-                </li>
-                <li>
-                    <p class="song">Mil años dos veces</p>
-                    <div class="button-box">
-                        <audio src="./audio/6.MIl años dos veces.mp3" type="audio/mp3" class="audio">Tu buscador no soporta este formato de audio</audio>
-                        <button class="play__btn">&#9658</button>
-                        <button class="pause__btn">&#9616 &#9612</button>
-                    </div>
-                </li>
-                <li>
-                    <p class="song">Historia sin final</p>
-                    <div class="button-box">
-                        <audio src="./audio/7.Historia sin final.mp3" type="audio/mp3" class="audio">Tu buscador no soporta este formato de audio</audio>
-                        <button class="play__btn">&#9658</button>
-                        <button class="pause__btn">&#9616 &#9612</button>
-                    </div>
-                </li>
-                <li>
-                    <p class="song">Adicción</p>
-                    <div class="button-box">
-                        <audio src="./audio/8.Adicción.mp3" type="audio/mp3" class="audio">Tu buscador no soporta este formato de audio</audio>
-                        <button class="play__btn">&#9658</button>
-                        <button class="pause__btn">&#9616 &#9612</button>
-                    </div>
-                </li>
-                <li>
-                    <p class="song">Lágrima</p>
-                    <div class="button-box">
-                        <audio src="./audio/9.Lagrima.mp3" type="audio/mp3" class="audio">Tu buscador no soporta este formato de audio</audio>
-                        <button class="play__btn">&#9658</button>
-                        <button class="pause__btn">&#9616 &#9612</button>
-                    </div>
-                </li>
-                <li>
-                    <p class="song">Leviatán</p>
-                    <div class="button-box">
-                        <audio src="./audio/10.Leviatán.mp3" type="audio/mp3" class="audio">Tu buscador no soporta este formato de audio</audio>
-                        <button class="play__btn">&#9658</button>
-                        <button class="pause__btn">&#9616 &#9612</button>
-                    </div>
-                </li>
-            </ul>
+        <p class="player-title">Escucha nuestro nuevo album</p>
+        <div class="flex container">
+            <div class="left-box">
+                <img src="./images/elysian-album.jpg" alt="portada-album" loading="lazy" />
+            </div>
+            <div class="right-box">
+                <ul>
+                    <li>
+                        <p class="song">Revelaciones</p>
+                        <div class="button-box">
+                            <audio src="./audio/1.Revelaciones.mp3" type="audio/mp3" class="audio">Tu buscador no soporta este formato de audio</audio>
+                            <button class="play__btn">&#9658</button>
+                            <button class="pause__btn">&#9616 &#9612</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="song">Guerrero de la luz</p>
+                        <div class="button-box">
+                            <audio src="./audio/2.Guerrero de la luz.mp3" type="audio/mp3" class="audio">Tu buscador no soporta este formato de audio</audio>
+                            <button class="play__btn">&#9658</button>
+                            <button class="pause__btn">&#9616 &#9612</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="song">Redención</p>
+                        <div class="button-box">
+                            <audio src="./audio/3.Redención.mp3" type="audio/mp3" class="audio">Tu buscador no soporta este formato de audio</audio>
+                            <button class="play__btn">&#9658</button>
+                            <button class="pause__btn">&#9616 &#9612</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="song">Enemigo Imaginario</p>
+                        <div class="button-box">
+                            <audio src="./audio/4.Enemigo imaginario.mp3" type="audio/mp3" class="audio">Tu buscador no soporta este formato de audio</audio>
+                            <button class="play__btn">&#9658</button>
+                            <button class="pause__btn">&#9616 &#9612</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="song">A traves del espejo</p>
+                        <div class="button-box">
+                            <audio src="./audio/5.A través del espejo.mp3" type="audio/mp3" class="audio">Tu buscador no soporta este formato de audio</audio>
+                            <button class="play__btn">&#9658</button>
+                            <button class="pause__btn">&#9616 &#9612</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="song">Mil años dos veces</p>
+                        <div class="button-box">
+                            <audio src="./audio/6.MIl años dos veces.mp3" type="audio/mp3" class="audio">Tu buscador no soporta este formato de audio</audio>
+                            <button class="play__btn">&#9658</button>
+                            <button class="pause__btn">&#9616 &#9612</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="song">Historia sin final</p>
+                        <div class="button-box">
+                            <audio src="./audio/7.Historia sin final.mp3" type="audio/mp3" class="audio">Tu buscador no soporta este formato de audio</audio>
+                            <button class="play__btn">&#9658</button>
+                            <button class="pause__btn">&#9616 &#9612</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="song">Adicción</p>
+                        <div class="button-box">
+                            <audio src="./audio/8.Adicción.mp3" type="audio/mp3" class="audio">Tu buscador no soporta este formato de audio</audio>
+                            <button class="play__btn">&#9658</button>
+                            <button class="pause__btn">&#9616 &#9612</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="song">Lágrima</p>
+                        <div class="button-box">
+                            <audio src="./audio/9.Lagrima.mp3" type="audio/mp3" class="audio">Tu buscador no soporta este formato de audio</audio>
+                            <button class="play__btn">&#9658</button>
+                            <button class="pause__btn">&#9616 &#9612</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="song">Leviatán</p>
+                        <div class="button-box">
+                            <audio src="./audio/10.Leviatán.mp3" type="audio/mp3" class="audio">Tu buscador no soporta este formato de audio</audio>
+                            <button class="play__btn">&#9658</button>
+                            <button class="pause__btn">&#9616 &#9612</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </Section>
     <section class="section__contact" id="contact">
@@ -191,30 +192,28 @@
     </section>
     <button class="backto__top" id="scroll__top" title="Volver Arriba">&#710</button>
     <footer>
-        <!-- footer top-->
         <div class="footer__block">
-            <div class="footer__column">
-                <h1>Seguir Navegando</h1>
-                <div><a href="#header">Volver a incio</a></div>
-                <div><a href="./galeria.html">Galería de imágenes</a></div>
-                <div><a href="#music__player">Reproductor de Música</a></div>
+            <div class="flex footer__column">
+                <h1 class="ftr-title">Seguir Navegando</h1>
+                <div><a class="link" href="#header">Volver a incio</a></div>
+                <div><a class="link" href="./galeria.html">Galería de imágenes</a></div>
+                <div><a class="link" href="#music__player">Reproductor de Música</a></div>
             </div>
-            <div class="footer__column">
-                <h2>Teléfono</h2>
+            <div class="flex footer__column">
+                <h2 class="ftr-title">Teléfono</h2>
                 <p>+549-2262-677997</p>
-                <h3>Correo Electrónico</h3>
+                <h3 class="ftr-title">Correo Electrónico</h3>
                 <p>elysian.epicrock@gmail.com</p>
             </div>
         </div>
-        <!-- footer bottom-->
         <div class="footer__block">
-            <div class="footer__icon">
-                <a href="http://facebook.com/elysiannecochea"><img src="images/FB_icon-icons.com_65534.svg " alt="facebook-icon "></a>
-                <a href="http://youtube.com/user/wx088"><img src="images/YOUTUBE_icon-icons.com_65537.svg " alt="youtube-icon "></a>
-                <a href="http://music.apple.com/ar/artist/elysian/1481604545"><img src="images/APPLE_icon-icons.com_65545.svg " alt="apple-icon "></a>
-                <a href="http://open.spotify.com/artist/7bBadlCuzxWV6ZJRktywFu?si=ip838cJOROWlsgvsqT4SQQ"><img src="images/spotify_icon-icons.com_65552.svg " alt="spotify-icon "></a>
-                <a href="http://instagram.com/elysian.necochea/?hl=es-la"><img src="images/INSTAGRAM_icon-icons.com_65535.svg" alt="instagram-icon "></a>
-                <a href="mailto:elysian.epicrock@gmail.com"><img src="images/GMAIL_icon-icons.com_65540.svg " alt="gmail-icon "></a>
+            <div class="div__icon">
+                <a href="http://facebook.com/elysiannecochea"><img src="images/FB_icon-icons.com_65534.svg " alt="facebook-icon " class="icon"></a>
+                <a href="http://youtube.com/user/wx088"><img src="images/YOUTUBE_icon-icons.com_65537.svg " alt="youtube-icon " class="icon"></a>
+                <a href="http://music.apple.com/ar/artist/elysian/1481604545"><img src="images/APPLE_icon-icons.com_65545.svg " alt="apple-icon " class="icon"></a>
+                <a href="http://open.spotify.com/artist/7bBadlCuzxWV6ZJRktywFu?si=ip838cJOROWlsgvsqT4SQQ"><img src="images/spotify_icon-icons.com_65552.svg " alt="spotify-icon " class="icon"></a>
+                <a href="http://instagram.com/elysian.necochea/?hl=es-la"><img src="images/INSTAGRAM_icon-icons.com_65535.svg" alt="instagram-icon " class="icon"></a>
+                <a href="mailto:elysian.epicrock@gmail.com"><img src="images/GMAIL_icon-icons.com_65540.svg " alt="gmail-icon " class="icon"></a>
             </div>
             <div class="author">
                 <p>Diseñada | Creada por <a href="https://github.com/orientalArg">Joaquín R</a></p>
@@ -223,5 +222,4 @@
     </footer>
     <script type="text/javascript" src="./js/app.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,60 @@
+.hero {
+    padding: 2.5rem 2rem;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(90deg,#000000d3, #ff00005d), url("image12.png");
+    @include for-tablet-landscape-up {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .hero__text {
+        text-align: left;
+        text-shadow: -2px 2px #000;
+        @include for-tablet-landscape-up {
+            width: 750px;
+            height: 100%;
+        }
+        h1 {
+            padding: 26px 0;
+            font-size: 2em;
+            width: fit-content;
+            letter-spacing: 1px;
+        }
+        p {
+            margin: 1.1rem 0;
+            font-size: 1.1em;
+            font-weight: 600;
+            line-height: 33px;
+            font-family: 'segoe UI';
+        }
+        button {
+            height: 40px;
+            width: 220px;
+            border: none;
+            margin: 15px 0;
+            color: white;
+            cursor: pointer;
+            font-size: .9em;
+            font-weight: 600;
+            border-radius: 3px;
+            text-transform: uppercase;
+            font-family: $main-font;
+            background: #a82828;
+            &:hover {
+                font-size: 1em;
+                transition: .3s;
+                background: #c44545;
+            }
+        }
+    }
+    .hero__media {
+        margin: 2rem auto;
+        @include for-tablet-landscape-up {
+            margin: 0;
+        }
+    }
+}
+._2ph- {
+    background: $background;
+}

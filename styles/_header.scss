@@ -1,0 +1,99 @@
+header {
+    width: 100%;
+    display: flex;
+    padding: 5px 20px;
+    position: relative;
+    align-items: center;
+    background: $background;
+    box-shadow: 0 0 15px 0 #161616;
+    justify-content: space-between;
+    @include for-tablet-landscape-up {
+        padding: 1rem 2rem;
+    }
+    .logo img {
+        height: 40px;
+        @include for-tablet-portrait-up {
+            height: 50px;
+        }
+    }
+    .div__link {
+        display: none;
+        @include for-tablet-landscape-up {
+            gap: 2rem;
+            display: flex;
+        }
+    }
+    .burguer {
+        gap: 3px;
+        top: 25px;
+        right: 15px;
+        z-index: 10;
+        width: 42px;
+        height: 42px;
+        display: flex;
+        cursor: pointer;
+        border-radius: 50%;
+        place-items: center;
+        place-content: center;
+        flex-direction: column;
+        @include for-tablet-landscape-up {
+            display: none;
+        }
+        div {
+            width: 26px;
+            height: 4px;
+            background: #d84848;
+        }
+    }
+}
+.menu {
+    top: 0;
+    left: 0;
+    z-index: 30;
+    width: 90vw;
+    height: 100vh;
+    padding: 25px;
+    display: none;
+    position: fixed;
+    animation: menu 0.5s ease;
+    background: $background;
+    align-content: space-evenly;
+    @keyframes menu {
+        0% {
+            width: 0vw;
+        }
+        100% {
+            width: 90vw;
+        }
+    }
+    .burguer__close {
+        top: 30px;
+        right: 20px;
+        position: absolute;
+        p {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            font-size: 1.6em;
+            text-align: center;
+            border-radius: 50%;
+            &:hover {
+                transition: .3s;
+                color: #9e3939;
+                background: white;
+            }
+        }
+    }
+    .menu__link {
+        gap: 35px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-family: $main-font;
+    }
+    .menu__icon {
+        gap: 2.5%;
+        display: flex;
+        justify-content: center;
+    }
+}

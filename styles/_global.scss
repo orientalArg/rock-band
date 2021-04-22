@@ -1,0 +1,91 @@
+html {
+    scale: 100%;
+    font-family: "Anton", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+* {
+    margin: 0;
+    outline: none;
+    color: #f7f7f7;
+    overflow-x: hidden;
+    letter-spacing: .7px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+::selection {
+    background: rgb(255, 50, 50);
+}
+.flex {
+    display: flex;
+}
+.link {
+    cursor: pointer;
+    font-size: 1.1em;
+    position: relative;
+    text-decoration: none;
+    font-family: $main-font;
+    overflow-y: hidden;
+    &::after {
+        content: "";
+        border-radius: 5px;
+        border-top: 3px solid #fff;
+        position: absolute;
+        right: 100%;
+        bottom: 1px;
+        left: 0;
+    }
+    &:hover::after {
+        transition: 0.7s;
+        right: 0;
+    }
+}
+.div__icon {
+    display: none;
+    @include for-tablet-landscape-up {
+        display: flex;
+        grid-gap: 5px;
+    }
+}
+.icon {
+    width: 36px;
+    height: 36px;
+    padding: 5px;
+    border-radius: 10px;
+    border: solid 2px #d84848;
+    &:hover {
+        padding: 3px;
+        animation: icon 0.7s forwards;
+    }
+}
+@keyframes icon {
+    0% {
+        background-color: $border-color;
+    }
+    100% {
+        background-color: rgba(125, 125, 125, 0);
+    }
+}
+@keyframes slide-in--btn {
+    0% {
+        right: 0px;
+        bottom: 25px;
+    }
+    100% {
+        right: 15px;
+        bottom: 25px;
+    }
+}
+@include for-tablet-landscape-up {
+    @keyframes slide-in--btn {
+        0% {
+            right: 0px;
+            bottom: 50px;
+        }
+        100% {
+            right: 50px;
+            bottom: 50px;
+        }
+    }
+}

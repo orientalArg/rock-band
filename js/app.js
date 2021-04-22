@@ -8,31 +8,28 @@ open.onclick = function() {
 close.onclick = function() {
     menu.style.display = "none";
 }
-
-
 var backToTop = document.getElementById("scroll__top");
 /* When the user clicks on the button, scroll to the top of the document */
 backToTop.onclick = function() {
     document.body.scrollTop = 0; /* For Safari */
     document.documentElement.scrollTop = 0; /* For Chrome, Firefox, IE and Opera*/
 }
-
-
 window.onscroll = function() { burguerScrollFunction() };
 /* When the user scrolls down 70px from the top of the document, show the burguer button */
 function burguerScrollFunction() {
     if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
         open.style.position = "fixed";
         backToTop.style.display = "block";
+        backToTop.style.animation = "slide-in--btn .5s ease";
         open.style.background = "#ffffffcc";
+
     } else {
         open.style.position = "static";
         open.style.background = "none";
+        backToTop.style.animation = "none";
         backToTop.style.display = "none";
     }
 }
-
-
 var play = document.getElementsByClassName("play__btn");
 var pause = document.getElementsByClassName("pause__btn");
 /* This function takes the click event on the play__btn/pause__btn and switch the li bg-color */
